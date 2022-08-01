@@ -1,0 +1,409 @@
+/*основа*/
+:root {
+	--fon-akcent: #2f303a;
+	--white-color: #ffffff;
+	--fon-color: #f5f5f5;
+	--primary-text-color: #212121;
+	--pretitle-color: #757575;
+	--akcent-color: #2196f3;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--primary-text-color);
+}
+ul {
+	padding-left: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0px auto;
+	/* outline: 2px solid tomato; */
+}
+
+.section {
+	padding: 94px 0 94px 0;
+}
+
+/*лого з варіантами*/
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: var(--akcent-color);
+	text-decoration: none;
+	margin-right: 93px;
+}
+
+.logo-black {
+	color: #000000;
+}
+
+.logo-white {
+	color: var(--white-color);
+}
+
+/*Хедер*/
+.head-design {
+	display: flex;
+	align-items: center;
+}
+
+.header {
+	border-bottom: 1px solid #ececec;
+}
+
+.header .logo {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+/*Навігація хедер*/
+.list {
+	list-style: none;
+
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+
+.header-navigation,
+.header-nav {
+	display: flex;
+	gap: 50px;
+}
+
+.header-link,
+.header-adres {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	display: block;
+}
+
+.header-link {
+	color: var(--primary-text-color);
+}
+.header-adres {
+	color: var(--pretitle-color);
+}
+.header-link:hover,
+.header-link:focus,
+.header-adres:hover,
+.header-adres:focus {
+	color: var(--akcent-color);
+}
+.header-link.current {
+	color: var(--akcent-color);
+}
+.header-nav {
+	margin-left: auto;
+}
+
+/*Футер*/
+.footer {
+	background-color: var(--fon-akcent);
+
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.karta,
+.footer-akcent {
+	font-style: normal;
+
+	text-decoration: none;
+	cursor: default;
+}
+.karta {
+	color: var(--white-color);
+}
+.footer-akcent {
+	color: hsla(0, 0%, 100%, 0.6);
+}
+.karta:hover,
+.karta:focus,
+.footer-akcent:hover,
+.footer-akcent:focus {
+	color: var(--akcent-color);
+}
+.footer .logo {
+	display: block;
+	margin-bottom: 20px;
+	margin-right: 0px;
+}
+
+.footer-item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+/* ============Studio Page=============== */
+/*Герой*/
+.hero-section {
+	background-color: var(--fon-akcent);
+	padding-top: 200px;
+	padding-bottom: 200px;
+	text-align: center;
+}
+
+.hero-title {
+	color: var(--white-color);
+	text-align: center;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	max-width: 696px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+/*Кнопка*/
+.button {
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: var(--akcent-color);
+
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	text-align: center;
+	color: var(--white-color);
+
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+
+	padding: 10px 32px;
+}
+
+.button:focus,
+.button:hover {
+	background-color: #188ce8;
+}
+
+/*Секція Особливості*/
+.original {
+	background-color: var(--white-color);
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.original-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.original-item {
+	width: calc((100% - 90px) / 4);
+	/* justify-content: space-between; */
+}
+/*вот тут внимание*/
+.original-item + .original-item {
+	margin-left: 30px;
+}
+
+.original-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.original-pretitle {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
+	color: var(--pretitle-color);
+}
+
+.con-robota {
+	padding-top: 0;
+}
+.robota-item {
+	width: calc((100% - 60px) / 3);
+}
+.comanda-title,
+.robota-title {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/*Работы*/
+.robota-list {
+	display: flex;
+	gap: 30px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+}
+
+/*Команда*/
+.komanda {
+	background-color: #f5f4fa;
+	text-align: center;
+}
+
+.comanda-title {
+}
+
+.comanda-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.foto-item-fio {
+	width: calc((100% - 90px) / 4);
+	background-color: var(--white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.fio {
+	font-weight: 500;
+	font-size: 16px;
+
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+
+	color: var(--primary-text-color);
+}
+
+.profesion {
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+
+	color: var(--pretitle-color);
+}
+
+.fio {
+	margin-bottom: 10px;
+}
+.cont-fio {
+	padding: 30px 5px;
+}
+
+/* ==========================-Portfolio Page============================ */
+/*Фільтр*/
+.portfolio-filtr {
+	background-color: #f5f4fa;
+
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	letter-spacing: 0.03em;
+	text-align: center;
+
+	color: var(--primary-text-color);
+	cursor: pointer;
+	border: none;
+
+	border-radius: 4px;
+
+	display: block;
+	padding: 6px 22px;
+}
+
+.portfolio-filtr:hover,
+.portfolio-filtr:focus {
+	background-color: var(--akcent-color);
+	text-decoration: underline solid var(--akcent-color);
+	color: var(--white-color);
+
+	cursor: pointer;
+	border: none;
+}
+
+.portfolio-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+
+	color: var(--primary-text-color);
+}
+
+.portfolio-pretitle {
+	line-height: 1.88;
+	letter-spacing: 0.03em;
+
+	color: var(--pretitle-color);
+}
+
+.foto-item.port {
+	width: calc((100% - 60px) / 3);
+}
+.portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 50px;
+	justify-content: center;
+}
+
+.portfolio-item {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.port-section {
+	padding: 20px 24px;
+	border: 1px solid #eeeeee;
+	border-top: 0px;
+}
