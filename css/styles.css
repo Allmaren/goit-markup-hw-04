@@ -480,6 +480,10 @@ img {
 .clients-link:focus .clients-icon {
 	fill: currentColor;
 }
+.clients-link:hover,
+.clients-link:focus {
+	border: 1px solid currentColor;
+}
 
 /* ==========================-Portfolio Page============================ */
 
